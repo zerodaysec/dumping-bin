@@ -14,6 +14,10 @@ A `$HOME/bin` for all my random scripts written, or clobbered together, found un
 
 - Nexpose scanning engine scripts
 
+---
+
+## Windows Admin
+
 ### `powershell/*`
 
 - Really old ps1 scripts from my old SysAdmin days.
