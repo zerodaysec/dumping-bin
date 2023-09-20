@@ -7,15 +7,15 @@ jobs:
     steps:
       - uses: actions/checkout@master
 
-      # Install pipenv
-      - name: Install pipenv
-        run: pip install pipenv
+    #   # Install pipenv
+    #   - name: Install pipenv
+    #     run: pip install pipenv
 
-      # Install dependencies from Pipfile
-      - name: Install dependencies
-        run: pipenv install
+    #   # Install dependencies from Pipfile
+    #   - name: Install dependencies
+    #     run: pipenv install
 
       - name: GitHub Action for pylint
         uses: cclauss/GitHub-Action-for-pylint@0.7.0
         with:
-          args: pylint **/*.py
+          args: pipenv install ; pylint **/*.py
