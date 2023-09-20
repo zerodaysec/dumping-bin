@@ -20,6 +20,6 @@ jobs:
     #     with:
     #       args: pip install pipenv && pipenv install && pylint **/*.py
       - name: GitHub Action for pylint
-        uses: zerodaysec/github-action-for-python@master
+        uses: zerodaysec/github-action-for-python@main
         with:
             args: pipenv install && pylint **/*.py
