@@ -10,7 +10,7 @@ jobs:
       - uses: actions/checkout@master
 
       - name: Audit Repository
-        uses: zerodaysec/repo-audit-action@main #change to version
+        uses: zerodaysec/github-action-repo-check@main #change to version
         with:
           files: README.md,CODEOWNERS
           actions: terraform-lint.yml,help-wanted.yml
