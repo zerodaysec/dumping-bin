@@ -16,6 +16,6 @@ jobs:
         run: pipenv install --dev
 
       - name: GitHub Action for pylint
-        uses: cclauss/GitHub-Action-for-pylint@0.7.0
+        uses: cclauss/GitHub-Action-for-pylint@06.0
         with:
           args: pylint **/*.py
