@@ -1,0 +1,16 @@
+name: Repo Governance
+
+on: push
+
+jobs:
+  job1:
+    name: Repo Governance
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@master
+
+      - name: Audit Repository
+        uses: zerodaysec/github-action-repo-check@main #change to version
+        with:
+          files: README.md,CODEOWNERS
+          actions: terraform-lint.yml,help-wanted.yml
